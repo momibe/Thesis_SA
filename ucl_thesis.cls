@@ -429,7 +429,7 @@
     \end{center}%
     \vfill%
     \begin{center}%
-    A dissertation submitted in partial fulfillment \\
+    A dissertation submitted in partial fulfilment \\
     of the requirements for the degree of \\
     \textbf{\@degree@string} \\
     of \\
@@ -530,7 +530,7 @@
                                           {-.3ex \@plus .1ex \@minus .2ex}%
                                           {-.2em}%
                                           {\reset@font \normalsize \bfseries}}
-\setcounter{secnumdepth}{2}
+\setcounter{secnumdepth}{5}
 %    \end{macrocode}
 %
 %  \subsection{Obscure Environments}
@@ -555,6 +555,15 @@
     \@mkboth{\@acknowledgements}{\@acknowledgements}%
 }{%
 }
+
+\newcommand \@publications{Publications}
+\newenvironment{publications}{%
+    \chapter*{\@publications}%
+    \@mkboth{\@publications}{\@publications}%
+}{%
+}
+
+
 %    \end{macrocode}
 %  \end{environment}
 %  \Finale

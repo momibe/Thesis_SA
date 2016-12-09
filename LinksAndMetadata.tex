@@ -9,6 +9,8 @@
 \usepackage{bibentry}
 \makeatletter\let\saved@bibitem\@bibitem\makeatother
 \usepackage[pdftex,hidelinks]{hyperref}
+\urlstyle{same} %this defines the \url{} style
+\mdseries\itshape\urlstyle{same}
 \makeatletter\let\@bibitem\saved@bibitem\makeatother
 \makeatletter
 \AtBeginDocument{
@@ -17,6 +19,9 @@
         pdfkeywords={Thesis Keywords},
         pdfauthor={Author},
         pdftitle={Title},
+        %colorlinks=false,% hyperlinks will be black
+  		%linkbordercolor=red,% hyperlink borders will be red
+  		%pdfborderstyle={/S/U/W 1}% border style will be underline of width 1pt
     }
 }
 \makeatother

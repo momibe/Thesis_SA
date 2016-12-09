@@ -75,7 +75,7 @@
 % Title Settings
 \setcounter{secnumdepth}{3}
 \setcounter{tocdepth}{3}
-\title{Towards Sentiment Architecture: Exploring Interactions with Media Architectural Interfaces}
+\title{A Field Trip into Sentiment Architectures \newline Designing for Interactions with Media Architecture}
 \author{Moritz Behrens}
 \department{The Bartlett School of Architecture}
 
@@ -86,7 +86,7 @@
 
 \nobibliography*
 % This is a dumb trick that works with the bibentry package to let
-%  you put bibliography entries whereever you like.
+%  you put bibliography entries where ever you like.
 % I used this to put references to papers a chapter's work was 
 %  published in at the end of that chapter.
 % For more information, see: http://stefaanlippens.net/bibentry
@@ -95,19 +95,28 @@
 %  might find this useful -- it'll just replace all your
 %  citations with little superscript notes.
 % Uncomment to use.
-\renewcommand{\cite}[1]{\emph{\textsuperscript{[#1]}}}
+%renewcommand{\cite}[1]{\emph{\textsuperscript{[#1]}}}
 
 % At last, content! Remember filenames are case-sensitive and 
 %  *must not* include spaces.
+%\include{00_Notes}
 \include{01_Preamble}
+%\include{01a_Index}
 \include{02_Introduction}
 \include{03_Background}
 \include{04_Framework}
 \include{05_Methodology}
 \include{06_Cases}
+%\include{06a_Taxonomy}
 \include{07_Discussion}
 \include{08_Conclusion}
 \include{Appendices} 
+
+
+% This executes the index
+\indexprologue{The index is meant to assist the reader to be reminded of key concepts }
+\printindex
+
 
 % You could separate these out into different files if you have
 %  particularly large appendices.
@@ -118,8 +127,12 @@
 % get a chapter or appendix number.
 \addcontentsline{toc}{chapter}{Bibliography}
 
+
 % Actually generates your bibliography.
-\bibliography{example}
+\bibliography{BibDesk_Moritz_130716}
+
+
+
 
 % All done. \o/
 \end{document}
